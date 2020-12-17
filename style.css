@@ -1,0 +1,58 @@
+/* Body */
+
+body
+{
+    display: flex;
+    width: 95%;
+    margin:auto;
+    background-color: #F2F2F2;
+    font-family: 'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: black;
+}
+
+
+/* Header et menus */
+
+header
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+#logo
+{
+    display: flex;
+}
+
+nav ul
+{
+    list-style-type: none;
+    display: flex;
+}
+
+nav li
+{
+    margin-left: 40px;
+}
+
+nav a
+{
+    color: #0065FC;
+    text-decoration: none;
+}
+
+/*a:visited
+{
+    color: black;
+}
+*/
+
+.inscription a
+{
+    font-weight: bold;
+}
+
+
+
