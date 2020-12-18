@@ -3,10 +3,12 @@
 body
 {
     display: flex;
-    width: 95%;
-    margin:auto;
-    background-color: #F2F2F2;
+    flex-direction: column;
+    width: 93%;
+    margin: auto;
+    background-color: white;
     font-family: 'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 16px;
     color: black;
 }
 
@@ -16,6 +18,8 @@ body
 header
 {
     width: 100%;
+    margin-top: 25px;
+    margin-bottom: 25px;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -32,27 +36,141 @@ nav ul
     display: flex;
 }
 
-nav li
-{
-    margin-left: 40px;
-}
-
 nav a
 {
+    padding-left: 30px;
+    padding-right: 30px;
     color: #0065FC;
     text-decoration: none;
 }
-
-/*a:visited
-{
-    color: black;
-}
-*/
 
 .inscription a
 {
     font-weight: bold;
 }
 
+.hébergement a
+{
+    border-top: 3px solid #0065FC;
+    padding-top: 38px;
+}
+
+.activités a
+{
+    color: black;
+}
 
 
+/* Titre et Champ de recherche */
+
+.recherche
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.recherche h1
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.recherche p
+{
+    font-size: 0.9em;
+    margin-top: 4px;
+}
+
+.champs_de_recherche
+{
+    display: flex;
+    width: 22em;
+}
+
+.champs_de_recherche .fa-map-marker-alt
+{
+    background-color: #F2F2F2;
+    font-size: 14px;
+    padding: 15px;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.champs_de_recherche .ville
+{
+    flex: 1;
+    border: 1px solid #F2F2F2;
+    font-size: 16px;
+    padding: 12px;
+}
+
+.champs_de_recherche .bouton_recherche
+{
+    border: none;
+    border-radius: 0px 15px 15px 0px;
+    background-color: #0065FC;
+    color: white;
+    font-size: 14px;
+    padding: 14px;
+}
+
+/* Filtres */
+
+.filtres
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 30px;
+}
+.filtres div
+{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-left: 20px;
+    border: 2px solid #F2F2F2;
+    border-radius: 100px;
+    border-left: none;
+}
+
+.filtres p
+{
+    font-weight: bold;
+    margin: 0px 8px 0px 8px;
+    padding: 0px 5px 0px 5px;
+}
+
+.filtres .fa-money-bill-wave, .fa-child, .fa-heart, .fa-dog
+{
+    background-color: #DEEBFF;
+    color: #0065FC;
+    border-radius: 100%;
+    padding: 10px;
+}
+
+.fa-child
+{
+    width: 16px;
+    padding-left: 13px;
+}
+
+.resultats_filtres
+{
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.resultats_filtres .fa-info
+{
+    color: #0065FC;
+    border: 2px solid #F2F2F2;
+    border-radius: 100%;
+    padding: 5px 10px 5px 10px;
+}
+
+.resultats_filtres p
+{
+    margin-left: 10px;
+}
