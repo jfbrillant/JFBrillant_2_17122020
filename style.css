@@ -25,11 +25,6 @@ header
     align-items: flex-end;
 }
 
-#logo
-{
-    display: flex;
-}
-
 nav ul
 {
     list-style-type: none;
@@ -82,13 +77,13 @@ nav a
     margin-top: 4px;
 }
 
-.champs_de_recherche
+.champ_de_recherche
 {
     display: flex;
     width: 22em;
 }
 
-.champs_de_recherche .fa-map-marker-alt
+.champ_de_recherche .fa-map-marker-alt
 {
     background-color: #F2F2F2;
     font-size: 14px;
@@ -96,7 +91,7 @@ nav a
     border-radius: 15px 0px 0px 15px;
 }
 
-.champs_de_recherche .ville
+.champ_de_recherche .ville
 {
     flex: 1;
     border: 1px solid #F2F2F2;
@@ -104,7 +99,7 @@ nav a
     padding: 12px;
 }
 
-.champs_de_recherche .bouton_recherche
+.champ_de_recherche .bouton_recherche
 {
     border: none;
     border-radius: 0px 15px 15px 0px;
@@ -132,6 +127,12 @@ nav a
     border: 2px solid #F2F2F2;
     border-radius: 100px;
     border-left: none;
+}
+
+.filtres div:hover
+{
+    background-color: #0065FC;
+    color: white;
 }
 
 .filtres p
