@@ -14,7 +14,7 @@
 
     <header>
         <div id="logo">
-            <img src="img/logo/Reservia.svg" alt="logo reservia">
+            <a href="#"><img src="img/logo/Reservia.svg" alt="logo reservia"></a>
         </div>
 
         <nav>
@@ -30,11 +30,11 @@
         <div class="recherche">
             <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
             <p>En plein centre ville ou en pleine nature</p>
-            <div class="champs_de_recherche">
+            <form class="champ_de_recherche" method="POST" action="#">
                 <i class="fas fa-map-marker-alt"></i>
                 <input type="search" name="ville" class="ville" value="Marseille, France">
-                <input type="button" class="bouton_recherche" value="Rechercher">
-            </div>
+                <input type="submit" class="bouton_recherche" value="Rechercher">
+            </form>
         </div>
 
         <div class="filtres">
