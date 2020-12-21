@@ -44,13 +44,13 @@ nav a
     font-weight: bold;
 }
 
-.hébergement a
+.hebergement a
 {
     border-top: 3px solid #0065FC;
     padding-top: 38px;
 }
 
-.activités a
+.activites a
 {
     color: black;
 }
@@ -109,6 +109,11 @@ nav a
     padding: 14px;
 }
 
+.champ_de_recherche .bouton_recherche
+{
+    cursor: pointer;
+}
+
 /* Filtres */
 
 .filtres
@@ -133,6 +138,7 @@ nav a
 {
     background-color: #0065FC;
     color: white;
+    cursor: pointer;
 }
 
 .filtres p
@@ -148,6 +154,7 @@ nav a
     color: #0065FC;
     border-radius: 100%;
     padding: 10px;
+    margin-left: -2px;
 }
 
 .fa-child
@@ -173,5 +180,7 @@ nav a
 
 .resultats_filtres p
 {
+    font-size: 0.9em;
     margin-left: 10px;
 }
+
