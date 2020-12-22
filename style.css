@@ -1,5 +1,10 @@
 /* Body */
 
+img
+{
+    max-width: 100%;
+}
+
 body
 {
     display: flex;
@@ -10,6 +15,11 @@ body
     font-family: 'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     color: black;
+}
+
+.bold
+{
+    font-weight: bold;
 }
 
 
@@ -192,20 +202,22 @@ nav a
 {
     display: flex;
     align-content: space-between;
+    flex-flow: wrap;
     width: 100%;
 }
 
 .bloc_hebergements
 {
+    flex: 2.3;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 70%;
     margin-right: 20px;
 }
 
 .bloc_hebergements h2
 {
     margin: 40px 0 0 40px;
+    font-size: 1.2em;
     font-weight: bold;
 }
 
@@ -221,7 +233,8 @@ nav a
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px grey;
-    height: 15%;
+    height: 190px;
+    width: 230px;
     margin: 20px;
     cursor: pointer;
 }
@@ -239,19 +252,13 @@ nav a
     font-size: 0.8em;
 }
 
-.bold
+.photo_chambre_hebergement
 {
-    font-weight: bold;
-}
-
-
-.photo_chambre
-{
+    object-fit: cover;
     border-radius: 20px 20px 0 0;
     padding: 5px;
-    object-fit: cover;
-    width: 225px;
-    height: 105px;
+    width: 95.5%;
+    height: 55%;
 }
 
 .rating_stars_hebergement
@@ -279,18 +286,27 @@ nav a
 
 /* Section Les plus populaires */
 
+.titre_et_icone_populaire
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin: 40px 40px 0 40px;
+}
+
 .bloc_populaire
 {
+    flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
-    width: 30%%;
     margin-left: 20px;
 }
 
 .bloc_populaire h2
 {
-    margin: 40px 0 0 40px;
+    font-size: 1.2em;
     font-weight: bold;
+    margin: 0;
 }
 
 .bloc_apercu_populaire
@@ -306,8 +322,9 @@ nav a
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px grey;
-    height: 15%;
-    margin: 20px;
+    margin: 10px 20px 10px 20px;
+    height: 140px;
+    min-width: 300px;
     cursor: pointer;
 }
 
@@ -327,20 +344,26 @@ nav a
 .rating_stars_populaire
 {
     display: flex;
-    margin: 25px 20px 5px 10px;
+    margin: 35px 20px 5px 10px;
+    font-size: 0.9em;
+}
+
+.bloc_photo_populaire
+{
+    flex: 1;
 }
 
 .photo_chambre_populaire
 {
+    object-fit: cover;
     border-radius: 20px 0 0 20px;
     padding: 5px;
-    object-fit: cover;
-    width: 100px;
-    height: 115px;
-    flex: 1;
+    height: 92%;
+    width: 90%
 }
 
 .contenu_populaire
 {
-    flex: 2;
+    flex: 1.6;
 }
+
