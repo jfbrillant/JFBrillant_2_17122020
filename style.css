@@ -1,4 +1,4 @@
-/* Body */
+/* Body et apparence globale */
 
 img
 {
@@ -9,12 +9,17 @@ body
 {
     display: flex;
     flex-direction: column;
-    width: 93%;
-    margin: auto;
     background-color: white;
     font-family: 'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     color: black;
+    margin: 0;
+}
+
+header, main
+{
+    width: 93%;
+    margin: auto;
 }
 
 .bold
@@ -27,7 +32,6 @@ body
 
 header
 {
-    width: 100%;
     margin-top: 25px;
     margin-bottom: 25px;
     display: flex;
@@ -447,7 +451,6 @@ nav a
     height: 76%
 }
 
-
 .bloc_photo_activite_petite
 {
     height: 45%;
@@ -458,3 +461,44 @@ nav a
     height: 55%;;
 }
 
+
+/* Footer */
+
+footer
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #F2F2F2;
+    margin: 0;
+    padding: 20px 0 20px 0;
+}
+
+footer ul
+{
+    list-style-type: none;
+    padding: 0;
+    font-size: 0.8em;
+}
+
+footer li
+{
+    padding-bottom: 7px;
+}
+
+footer h3
+{
+    font-weight: bold;
+    font-size: 0.9em;
+}
+
+footer a
+{
+    color: black;
+    text-decoration: none;
+}
+
+.a_propos, .nos_hebergements, .assistance
+{
+    margin-right: 190px;
+    margin-left: 60px;
+}
