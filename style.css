@@ -242,7 +242,7 @@ nav a
 .apercu_resultat h3
 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 0 0 5px 20px;
 }
 
@@ -331,7 +331,7 @@ nav a
 .apercu_populaire h3
 {
     font-weight: bold;
-    font-size: 1em;
+    font-size: 0.9em;
     margin: 15px 20px 2px 10px;
 }
 
@@ -365,5 +365,96 @@ nav a
 .contenu_populaire
 {
     flex: 1.6;
+}
+
+
+/* Section Activités à Marseille */
+
+.activites_a_marseille
+{
+    width: 100%;;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.activites_a_marseille h2
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-left: 20px;
+    margin-bottom: -5px;
+}
+
+.activites_a_marseille h3
+{
+    font-weight: bold;
+    font-size: 0.9em;
+    margin: 10px 20px 2px 13px;
+}
+
+.bloc_activites
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
+    width: 100%;
+    height: 370px;
+}
+
+.bloc_activite_simple, .bloc_photo_activite_petite, .bloc_photo_activite_moyenne
+{
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 1px 1px 10px grey;
+    margin: 20px;
+    cursor: pointer;
+}
+
+.bloc_activite_simple
+{
+    width: 25%;
+    height: 100%;
+}
+
+.bloc_activite_double
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 25%;
+    height: 89%;
+}
+
+.photo_activite, .photo_activite_petite, .photo_activite_moyenne
+{
+    object-fit: cover;
+    border-radius: 20px 20px 0 0;
+    width: 100%;
+}
+
+.photo_activite
+{
+    height: 88%;
+}
+
+.photo_activite_petite
+{
+    height: 70%
+}
+
+.photo_activite_moyenne
+{
+    height: 76%
+}
+
+
+.bloc_photo_activite_petite
+{
+    height: 45%;
+}
+
+.bloc_photo_activite_moyenne
+{
+    height: 55%;;
 }
 
