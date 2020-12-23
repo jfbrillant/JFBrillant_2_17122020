@@ -5,6 +5,11 @@ img
     max-width: 100%;
 }
 
+html
+{
+    width: auto;
+}
+
 body
 {
     display: flex;
@@ -250,6 +255,11 @@ nav a
     display: flex;
     flex-flow: wrap;
     margin: 20px;
+}
+
+.bloc_resultats .resultats_afficherplus_mobile
+{
+    display: none;
 }
 
 .apercu_resultat
@@ -594,7 +604,7 @@ footer a
     
     .recherche h1
     {
-        font-size: 1.2em;
+        font-size: 1.4em;
         margin: 0;
     }
 
@@ -621,8 +631,8 @@ footer a
 
     .recherche .champ_de_recherche
     {
-        width: 15em;
-        margin: 20px 0 0 0;
+        width: auto;
+        margin-top: 35px;
     }
 
 
@@ -644,10 +654,126 @@ footer a
         margin: 20px;
     }
 
-    /* Section Populaire */
+    /* Section hébegement et populaire */
 
-    
+    .section_hebergements_et_populaires
+    {
+        flex-direction: column-reverse;
+        width: auto;
+    }
 
+    .bloc_hebergements, .bloc_populaire
+    {
+        border-radius: 0;
+        width: auto;
+    }
+
+    .titre_et_icone_populaire
+    {
+        margin: 40px 20px 20px 20px;
+    }
+
+    .bloc_populaire, .bloc_resultats
+    {
+        width: auto;
+        margin: 0;
+        padding: 0 0 40px 0;
+    }
+
+    .bloc_apercu_populaire
+    {
+        width: auto;
+        margin: 0;
+    }
+
+    .bloc_hebergements
+    {
+        background-color: white;
+    }
+
+    .bloc_hebergements h2
+    {
+        margin: 40px 20px 10px 20px;
+    }
+
+    .apercu_resultat
+    {
+        width: auto;
+        margin-bottom: 3px;
+    }
+
+    .photo_chambre_hebergement
+    {
+        width: 96.5%;
+    }
+
+    .bloc_resultats .resultats_afficherplus_mobile
+    {
+        display: block;
+        margin: 15px 0 0 20px;
+        font-weight: bold;
+    }
+
+
+    /* Section activités */
+
+    .activites_a_marseille
+    {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0 20px 0 20px;
+    }
+
+    .activites_a_marseille h2
+    {
+        margin: 0 0 30px 0;
+    }
+
+    .bloc_activites
+    {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .bloc_activite_simple, .bloc_activite_double
+    {
+        width: auto;
+        margin: 0;
+    }
+
+    .bloc_activite_simple, .bloc_photo_activite_petite, .bloc_photo_activite_moyenne
+    {
+        height: 190px;
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .photo_activite, .photo_activite_petite, .photo_activite_moyenne
+    {
+        height: 70%;
+    }
+
+    .bloc_activites h3
+    {
+        margin: 15px 0 0 15px;
+    }
+
+
+    /* Footer */
+
+    footer
+    {
+        flex-direction: column;
+        padding-top: 30px;
+    }
+
+    .a_propos, .nos_hebergements, .assistance
+    {
+        margin: 0 0 0 20px;
+    }
 }
 
 
