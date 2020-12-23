@@ -10,10 +10,17 @@ html
     width: auto;
 }
 
+#wrapper
+{
+    max-width: 1600px;
+    margin: auto;
+}
+
 body
 {
     display: flex;
     flex-direction: column;
+    width: auto;
     background-color: white;
     font-family: 'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
@@ -240,7 +247,7 @@ nav a
     flex: 2.3;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-right: 20px;
+    margin: 20px;
 }
 
 .bloc_hebergements h2
@@ -254,6 +261,8 @@ nav a
 {
     display: flex;
     flex-flow: wrap;
+    justify-content: center;
+    align-items: flex-start;
     margin: 20px;
 }
 
@@ -333,7 +342,7 @@ nav a
     flex: 1;
     background-color: #F2F2F2;
     border-radius: 20px;
-    margin-left: 20px;
+    margin: 20px;
 }
 
 .bloc_populaire h2
@@ -406,7 +415,10 @@ nav a
 
 .activites_a_marseille
 {
-    width: 100%;;
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    height: auto;
     margin-top: 60px;
     margin-bottom: 60px;
 }
@@ -423,6 +435,7 @@ nav a
 {
     font-weight: bold;
     font-size: 0.9em;
+    width: 100%;
     margin: 10px 20px 2px 13px;
 }
 
@@ -438,7 +451,6 @@ nav a
     background-color: white;
     border-radius: 20px;
     box-shadow: 1px 1px 10px grey;
-    margin: 20px;
     cursor: pointer;
 }
 
@@ -446,6 +458,7 @@ nav a
 {
     width: 25%;
     height: 100%;
+    margin: 20px;
 }
 
 .bloc_activite_double
@@ -454,7 +467,8 @@ nav a
     flex-direction: column;
     justify-content: space-between;
     width: 25%;
-    height: 89%;
+    height: 100%;
+    margin: 20px;
 }
 
 .photo_activite, .photo_activite_petite, .photo_activite_moyenne
@@ -481,12 +495,12 @@ nav a
 
 .bloc_photo_activite_petite
 {
-    height: 45%;
+    height: 38.3%;
 }
 
 .bloc_photo_activite_moyenne
 {
-    height: 55%;;
+    height: 51.6%;;
 }
 
 
