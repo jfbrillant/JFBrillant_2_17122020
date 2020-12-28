@@ -5,17 +5,6 @@ img
     max-width: 100%;
 }
 
-html
-{
-    width: auto;
-}
-
-#wrapper
-{
-    max-width: 1600px;
-    margin: auto;
-}
-
 body
 {
     display: flex;
@@ -25,7 +14,8 @@ body
     font-family: 'raleway', 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     font-size: 16px;
     color: black;
-    margin: 0;
+    max-width: 1600px;
+    margin: auto;
 }
 
 header, main
@@ -51,10 +41,11 @@ header
     align-items: flex-end;
 }
 
-.nav_links
+.nav_desktop
 {
     display: flex;
 }
+
 .nav_mobile
 {
     display: none;
@@ -154,12 +145,14 @@ nav a
     cursor: pointer;
 }
 
+
 /* Filtres */
 
 .bloc_filtres
 {
     display: flex;
     align-items: baseline;
+    margin-top: 30px;
 }
 
 .filtres
@@ -168,8 +161,8 @@ nav a
     justify-content: flex-start;
     align-items: center;
     flex-flow: wrap;
-    margin-top: 30px;
 }
+
 .filtres div
 {
     display: flex;
@@ -188,7 +181,7 @@ nav a
     cursor: pointer;
 }
 
-.filtres p
+.bloc_filtres p
 {
     font-weight: bold;
     margin: 0px 8px 0px 8px;
@@ -324,8 +317,9 @@ nav a
 .fa-star
 {
     font-size: 0.8em;
-    margin-right: -4px
+    margin-right: -4px;
 }
+
 
 /* Section Les plus populaires */
 
@@ -402,7 +396,7 @@ nav a
     border-radius: 20px 0 0 20px;
     padding: 5px;
     height: 92%;
-    width: 90%
+    width: 90%;
 }
 
 .contenu_populaire
@@ -427,7 +421,7 @@ nav a
 {
     font-size: 1.2em;
     font-weight: bold;
-    margin-left: 20px;
+    margin-left: 30px;
     margin-bottom: 20px;
 }
 
@@ -443,6 +437,8 @@ nav a
 {
     display: flex;
     justify-content: space-between;
+    margin-left: -20px;
+    margin-right: -20px;
     height: 370px;
 }
 
@@ -485,12 +481,12 @@ nav a
 
 .photo_activite_petite
 {
-    height: 70%
+    height: 70%;
 }
 
 .photo_activite_moyenne
 {
-    height: 76%
+    height: 76%;
 }
 
 .bloc_photo_activite_petite
@@ -500,7 +496,7 @@ nav a
 
 .bloc_photo_activite_moyenne
 {
-    height: 51.6%;;
+    height: 51.6%;
 }
 
 
@@ -551,6 +547,7 @@ footer a
 
 @media all and (max-device-width: 480px)
 {   
+
     /* Apparence globale */
 
     body, header, main, .recherche, .filtres, .resultats_filtres, .bloc_hebergements, .bloc_populaire, .activites_a_marseille, .footer
@@ -568,7 +565,7 @@ footer a
         margin: 30px 20px 20px 20px;
     }
     
-    .nav_desktop .nav_links
+    .hebergements_desktop, .activites_desktop
     {
         display: none;
     }
@@ -660,13 +657,14 @@ footer a
 
     .filtres div
     {
-        margin: 0 10px 10px 0
+        margin: 0 10px 10px 0;
     }
 
     .resultats_filtres
     {
         margin: 20px;
     }
+
 
     /* Section hébegement et populaire */
 
@@ -793,6 +791,7 @@ footer a
 @media all and (min-width: 480px) and (max-width: 1024px)
 {
     
+
     /* Section hébergements et populaires */
     
     .section_hebergements_et_populaires
@@ -818,7 +817,7 @@ footer a
 
     .activites_a_marseille h2
     {
-        margin: 30px 0 30px 0;
+        margin: 30px 0 30px 30px;
     }
 
     .bloc_activites
