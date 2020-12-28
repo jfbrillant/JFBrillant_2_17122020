@@ -419,7 +419,7 @@ nav a
     flex-direction: column;
     width: auto;
     height: auto;
-    margin-top: 60px;
+    margin-top: 30px;
     margin-bottom: 60px;
 }
 
@@ -428,7 +428,7 @@ nav a
     font-size: 1.2em;
     font-weight: bold;
     margin-left: 20px;
-    margin-bottom: -5px;
+    margin-bottom: 20px;
 }
 
 .activites_a_marseille h3
@@ -790,8 +790,11 @@ footer a
     }
 }
 
-@media all and (min-width: 480px) and (max-width: 820px)
+@media all and (min-width: 480px) and (max-width: 1024px)
 {
+    
+    /* Section hébergements et populaires */
+    
     .section_hebergements_et_populaires
     {
         flex-direction: column;
@@ -800,5 +803,60 @@ footer a
     .bloc_hebergements, .bloc_populaire
     {
         margin: 10px 0 10px 0;
+    }
+
+   
+    /* Section activités */
+
+    .activites_a_marseille
+    {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .activites_a_marseille h2
+    {
+        margin: 30px 0 30px 0;
+    }
+
+    .bloc_activites
+    {
+        width: auto;
+        height: auto;
+        flex-direction: column;
+        margin: 0;
+    }
+
+    .bloc_activite_simple, .bloc_activite_double
+    {
+        width: auto;
+        margin: 0;
+    }
+
+    .bloc_activite_simple, .bloc_photo_activite_petite, .bloc_photo_activite_moyenne
+    {
+        height: 190px;
+        width: auto;
+        margin: 0 0 20px 0;
+    }
+
+    .photo_activite, .photo_activite_petite, .photo_activite_moyenne
+    {
+        height: 70%;
+    }
+
+    .bloc_activites h3
+    {
+        margin: 15px 0 0 15px;
+    }
+
+
+    /* Footer */
+    
+    footer
+    {
+        flex-direction: column;
     }
 }
