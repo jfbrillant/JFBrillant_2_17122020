@@ -34,6 +34,12 @@ header, main
     font-weight: bold;
 }
 
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
 
 /* Header et menus */
 
@@ -462,6 +468,12 @@ nav a
     margin-left: -20px;
     margin-right: -20px;
     height: 370px;
+}
+
+.bloc_activites a
+{
+    width: 100%;
+    height: 100%;
 }
 
 .bloc_activite_simple, .bloc_photo_activite_petite, .bloc_photo_activite_moyenne
